@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" type="text/css" href="media/estilo.css"/>
+</head>
+<body>
+    <h1 align='center'>Juego el ahorcado</h1>
+    <div align='center'>
+        <div>
+            <form id="formulario">
+                <input id="palabraNueva" type="text" required pattern="[a-z]{1,15}" minlength="3"><br>
+                <button id="agregar-palabra">Agregar palabra</button>
+            </form>
+            <br>
+            <button id="iniciar">Comenzar Juego</button>
+        </div>
+        
+        <div>
+            <canvas width="1200" height="800" id="canvas"></canvas>
+        </div>
+        <h3 id="palabra-escogida">Aqui estaran las palabras</h3>
+    </div>
+   
+
+    <script src="js/pantalla.js"></script>
+    <script src="js/palabras.js"></script>
+</body>
+</html>

@@ -4,7 +4,6 @@ function palabraAleatoria(listado){
     var palabraEscogida = listado[alAzar];
     console.log(palabraEscogida)
     return palabraEscogida;
-
 };
 
 /**Me dibuja las palabras, se le debe pasar como parametro
@@ -27,3 +26,4 @@ function contarLetras(palabra){
     }
     return caracter;
 }
+

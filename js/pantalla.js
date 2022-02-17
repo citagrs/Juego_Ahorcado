@@ -7,8 +7,10 @@ var xAleatorio;
 var yAleatorio;
 
 var agregarPalabra = document.querySelector("#agregar-palabra");
-var listaDePalabras = ["Colombia","Ecuador","Mexico"];
+var listaDePalabras = ["Colombia","Caramba"];
 var palabraSecreta="";
+var guiones="";
+var control = false;
 
 function canvas (){
     var imagen = document.querySelector("canvas");
@@ -33,23 +35,83 @@ agregarPalabra.addEventListener("click",function(event){
     }
 })
 
+function nuevosElementos() {
+    // crear un nuevo elemento div
+    var nuevaDiv = document.createElement("h1");
+    // darle contenido
+    var nuevoContenido= document.createTextNode("Hola, cuanto tiempo!");
+    console.log(nuevoContenido);
+      //agregue el nodo de texto al div recién creado
+    nuevaDiv.appendChild(nuevoContenido); 
+  }
+
 /**Funcion al oprimir el boton INICIAR JUEGO
  * Me realizado el llamado de los guiones
  * y me genera la palabra Secreta
 */
 var iniciar = document.querySelector("#iniciar");
-iniciar.addEventListener("click",function(listado){
+iniciar.addEventListener("click",function(){
     controladorJuego();
-    palabraSecreta = palabraAleatoria(listaDePalabras);
-    let palabra = palabraSecreta.split('');
-    var guiones = contarLetras(palabra);
-    console.log(palabra);
+    palabraSecreta = (palabraAleatoria(listaDePalabras));
+    guiones = palabraSecreta.replace(/./g, "_  ");
     dibujar(pincel,guiones,800,200);
+    nuevosElementos();
+    
 });
 
-function palabra (){
-    palabraSecreta;
-}
+
+
+
+/**Funcion que permite escoger una palabra aletoria */
+function palabraAleatoria(listado){
+    var palabraSecreta = listado[Math.floor(Math.random()*listado.length)];
+    return palabraSecreta;
+};
+
+document.addEventListener("keypress",function(evento){
+
+    if (control==true){
+        var letra = evento.key;
+        console.log(letra);
+        if (palabraSecreta.includes(letra)){
+            
+            var contar = 0;
+            while (contar<palabraSecreta.length){
+                if(palabraSecreta[contar]===letra){
+                    var espacio = contar*39;
+                    var x = 798 +espacio;
+                    dibujar(pincel,letra,x,190);
+                }
+                
+
+                contar++;
+                
+            }
+            
+           /*
+           for(var f in palabraSecreta){
+            if(palabraSecreta[f]==letra){
+                guiones = guiones.replace(/_/i,letra);
+                var espacio = f*29;
+                var x = 808+espacio;
+                dibujar(pincel,letra,x,190);
+            }
+            
+           }
+           alert(guiones);
+           */
+
+
+        }
+        
+    }
+    
+
+},false);
+
+function controladorJuego (){
+    control = true;
+};
 
 
 

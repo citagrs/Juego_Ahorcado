@@ -1,16 +1,17 @@
 
 var pincel = canvas();
-pincel.fillStyle = 'lightgrey';
+pincel.fillStyle = 'white';
 pincel.fillRect(0,0,1200,800);
 
 var xAleatorio;
 var yAleatorio;
 
 var agregarPalabra = document.querySelector("#agregar-palabra");
-var listaDePalabras = ["Colombia","Caramba"];
+var listaDePalabras = [];
 var palabraSecreta="";
 var guiones="";
 var control = false;
+var contarmalo=1;
 
 function canvas (){
     var imagen = document.querySelector("canvas");
@@ -73,6 +74,8 @@ document.addEventListener("keypress",function(evento){
     if (control==true){
         var letra = evento.key;
         console.log(letra);
+    
+        
         if (palabraSecreta.includes(letra)){
             
             var contar = 0;
@@ -82,26 +85,12 @@ document.addEventListener("keypress",function(evento){
                     var x = 798 +espacio;
                     dibujar(pincel,letra,x,190);
                 }
-                
-
-                contar++;
-                
+                contar++;   
             }
-            
-           /*
-           for(var f in palabraSecreta){
-            if(palabraSecreta[f]==letra){
-                guiones = guiones.replace(/_/i,letra);
-                var espacio = f*29;
-                var x = 808+espacio;
-                dibujar(pincel,letra,x,190);
-            }
-            
-           }
-           alert(guiones);
-           */
-
-
+        }else{
+            vidas(pincel,contarmalo);
+            console.log(contarmalo +" intento");
+            contarmalo++;
         }
         
     }

@@ -1,8 +1,178 @@
+#body {
+    height: 100%;
+    background-image: url("./fondo.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
 #canvas {
     border: 3px solid gray;
     border-radius: 1%;
+}
+#palabraNueva{
+    border-radius: 10px;
+    width:30%;
+    padding:2px;
+    background: rgb(255, 255, 255);
+    width:15%;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px 5px rgba(213, 250, 3, 0.822);
+}
+#iniciar{
+    border-radius: 10px;
+    width:30%;
+    padding:5px;
+    background: rgb(126, 153, 8);
+    width:13%;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px 5px rgba(213, 250, 3, 0.822);
+}
+#agregar-palabra{
+    border-radius: 10px;
+    width:30%;
+    padding:5px;
+    background: rgb(126, 153, 8);
+    width:13%;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px 5px rgba(213, 250, 3, 0.822);
 }
 
 .invisible{
 	display: none;
 }
+#re-iniciar{
+    display:inline-block;
+    width:30%;
+    padding:10px;
+    background: rgb(126, 153, 8);
+    width:15%;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px 5px rgba(213, 250, 3, 0.822);
+}
+#titulo-uno {
+
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  
+  

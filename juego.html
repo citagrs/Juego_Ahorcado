@@ -4,25 +4,49 @@
     <meta charset="utf-8">
     <title>Ahorcado</title>
     <link rel="stylesheet" type="text/css" href="media/estilo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
-<body>
-    <h1 align='center'>Juego el ahorcado</h1>
+<body id="body">
+    <h1 align='center'id="titulo-uno">JUEGO EL AHORCADO</h1>
     <div align='center'>
         <div>
             <form id="formulario">
-                <input id="palabraNueva" type="text" minlength="3"><br>
+                <input id="palabraNueva" type="text" minlength="3"><br><br>
                 <button id="agregar-palabra">Agregar palabra</button>
             </form>
             <br>
             <button id="iniciar">Comenzar Juego</button>
+            <br>
+            <br>
         </div>
         <div id="prueba"></div>
         <div>
             <canvas width="1200" height="700" id="canvas"></canvas>
         </div>
         <button id="re-iniciar">Empezar de Nuevo</button>
+        <br><br>
     </div>
-   
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/b1cita/"><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/b1cita"><i class="icon ion-social-linkedin"></i></a>
+                        <a href="https://www.instagram.com/oscar.cita/"><i class="icon ion-social-instagram"></i></a>
+                        <a href="https://github.com/citagrs"><i class="icon ion-social-github"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">Oscar Daniel Cita © 2022</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/pantalla.js"></script>
     <script src="js/teclado.js"></script>

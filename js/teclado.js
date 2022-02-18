@@ -80,6 +80,8 @@ function crearBaseHorca(pincel,x,y){
 }
 function limpiarPantalla(pincel){
     pincel.clearRect(0,0,1200,700);
+    pincel.fillStyle = 'white';
+    pincel.fillRect(0,0,1200,700);
 }
 
 

@@ -7,7 +7,7 @@ var xAleatorio;
 var yAleatorio;
 
 var agregarPalabra = document.querySelector("#agregar-palabra");
-var listaDePalabras = [];
+var listaDePalabras = ["Carajo"];
 var palabraSecreta="";
 var guiones="";
 var control = false;

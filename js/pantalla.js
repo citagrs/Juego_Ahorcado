@@ -8,7 +8,7 @@ var yAleatorio;
 
 var agregarPalabra = document.querySelector("#agregar-palabra");
 var reiniciar = document.querySelector("#re-iniciar");
-var listaDePalabras = ["alura"]; //agregar en mayusculas
+var listaDePalabras = []; //agregar en mayusculas
 var listaLetrasCorrectas = [];
 var validadordeCaracteres = [];
 var palabraSecreta="";

@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Ahorcado</title>
-    <link rel="stylesheet" type="text/css" href="media/estilo.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-</head>
-<body id="body">
-    <h1 align='center'id="titulo-uno">JUEGO EL AHORCADO</h1>
-    <div align='center'>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="icon" href="./media/b-cita-logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/1formulario/titulo.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/1formulario/formulario.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/2cuadroJuego/interfaz.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/2cuadroJuego/boton.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+  </head>
+  <body id="body">
+    <main>
+      <section class="titulo seccion">
+        <h1 class="titulo__principal">JUEGO EL AHORCADO</h1>
+      </section>
+      <section align="center" class="caja-formulario seccion">
         <div>
-            <form id="formulario">
-                <input id="palabraNueva" type="text" minlength="3"><br><br>
-                <button id="agregar-palabra">Agregar palabra</button>
-            </form>
-            <br>
-            <button id="iniciar">Comenzar Juego</button>
-            <br>
-            <br>
+          <form id="formulario" class="formulario">
+            <input
+              id="palabraNueva"
+              class="formulario__input"
+              type="text"
+              minlength="3"
+              placeholder="Nueva palabra"
+              autocomplete="off"
+              
+            />
+            <button id="agregar-palabra" class="formulario__boton">
+              Agregar
+            </button>
+          </form>
         </div>
-        <div id="prueba"></div>
-        <div>
-            <canvas width="1200" height="700" id="canvas"></canvas>
+      </section>
+      <section class="interfaz seccion">
+        <div class="interfaz__area">
+          <div>
+            <button id="iniciar" class="interfaz__boton">Comenzar Juego</button>
+            <button id="re-iniciar" class="interfaz__boton">Re iniciar</button>
+          </div>
+          <div>
+            <canvas
+              width="1200"
+              height="700"
+              id="canvas"
+              class="canvas"
+            ></canvas>
+          </div>
         </div>
-        <button id="re-iniciar">Empezar de Nuevo</button>
-        <br><br>
-    </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/b1cita/"
+            ><img src="media/linkedin.png"
+          /></a>
+        </li>
 
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col item social">
-                        <a href="https://www.facebook.com/b1cita/"><i class="icon ion-social-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/b1cita"><i class="icon ion-social-linkedin"></i></a>
-                        <a href="https://www.instagram.com/oscar.cita/"><i class="icon ion-social-instagram"></i></a>
-                        <a href="https://github.com/citagrs"><i class="icon ion-social-github"></i></a>
-                    </div>
-                </div>
-                <p class="copyright">Oscar Daniel Cita © 2022</p>
-            </div>
-        </footer>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
+        <li>
+          <a href="https://github.com/citagrs"
+            ><img src="media/github.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/b1cita/"
+            ><img src="media/facebook.png"
+          /></a>
+        </li>
+      </ul>
+      <br />
+      <p>Realizado por Oscar Cita © 2022</p>
+    </footer>
     <script src="js/pantalla.js"></script>
     <script src="js/teclado.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

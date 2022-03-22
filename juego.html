@@ -6,18 +6,14 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="icon" href="./media/b-cita-logo.png" />
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/1formulario/titulo.css" />
+    <link rel="stylesheet" type="text/css" href="css/formulario/titulo.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/1formulario/formulario.css"
+      href="css/formulario/formulario.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/2cuadroJuego/interfaz.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/2cuadroJuego/boton.css" />
+    <link rel="stylesheet" type="text/css" href="css/interfaz/interfaz.css" />
+    <link rel="stylesheet" type="text/css" href="css/interfaz/boton.css" />
     <link rel="stylesheet" type="text/css" href="css/footer/footer.css" />
     <link
       rel="stylesheet"
@@ -43,7 +39,6 @@
               minlength="3"
               placeholder="Nueva palabra"
               autocomplete="off"
-              
             />
             <button id="agregar-palabra" class="formulario__boton">
               Agregar
@@ -68,27 +63,25 @@
         </div>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li>
+    <footer class="footer">
+      <div class="footer__imagenes">
+        <div class="footer__imagen">
           <a href="https://www.linkedin.com/in/b1cita/"
             ><img src="media/linkedin.png"
           /></a>
-        </li>
-
-        <li>
+        </div>
+        <div class="footer__imagen">
           <a href="https://github.com/citagrs"
             ><img src="media/github.png"
           /></a>
-        </li>
-        <li>
+        </div>
+        <div class="footer__imagen">
           <a href="https://www.facebook.com/b1cita/"
             ><img src="media/facebook.png"
           /></a>
-        </li>
-      </ul>
-      <br />
-      <p>Realizado por Oscar Cita © 2022</p>
+        </div>
+      </div>
+      <p class="footer__parrafo">Realizado por Oscar Cita © 2022</p>
     </footer>
     <script src="js/pantalla.js"></script>
     <script src="js/teclado.js"></script>

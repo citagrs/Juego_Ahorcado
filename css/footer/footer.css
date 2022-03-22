@@ -1,34 +1,27 @@
-footer {
-    top:3.5vh;
-    right: 9%;
-    text-align: center;
-    background-color:rgb(32, 58, 58);
+.footer {
+  background-color: rgb(32, 58, 58);
+  display: flow-root;
+  text-align: center;
 }
-footer div{
-    margin-top: 40px;
-    display: inline-block;
-    align-items: center;
+.footer__imagenes div {
+  align-items: center;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-footer img{
-    width: 40px;
-    filter: invert(0.9);
-    padding: 10px 20px 10px 20px;
-    transition: 0.5s all;
+.footer__imagen img {
+  filter: invert(0.9);
+  transition: 0.5s all;
+  width: 35px;
+  margin: 0 10px 0 10px;
 }
-footer img:hover{
-    transform: scale(1.1);
-    filter: invert(3);
+footer img:hover {
+  filter: invert(3);
+  transform: scale(1.1);
 }
-footer ul{
-    margin: 20px;
-}
-footer li{
-    display: inline-block;
-}
-footer p{
-    color: white;
-    font-size: 12px;
-    font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 20px;
+.footer__parrafo {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-style: normal;
 }

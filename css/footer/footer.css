@@ -25,3 +25,13 @@ footer img:hover {
   font-size: 12px;
   font-style: normal;
 }
+
+@media screen and (min-width: 480px) {
+  .footer__imagen img{
+    margin: 0 30px 0 30px;
+    width: 5rem;
+  }
+  .footer__parrafo{
+    font-size: 2rem;
+  }
+}

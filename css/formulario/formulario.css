@@ -32,3 +32,23 @@
 .formulario__boton:hover {
   transform: scale(1.05);
 }
+
+@media screen and (min-width: 480px) {
+  .formulario{
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario__input{
+    font-size: 3rem;
+    width: 30rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+  .formulario__boton {
+    font-size: 3rem;
+    height: 5rem;
+    width: auto;
+  }
+}

@@ -38,3 +38,10 @@
     background-position: 100% 50%;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .titulo__principal {
+    font-size: 8rem;
+    margin-bottom: 5rem;
+  }
+}

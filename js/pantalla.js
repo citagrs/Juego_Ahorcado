@@ -39,10 +39,21 @@ agregarPalabra.addEventListener("click",function(event){
         listaDePalabras.push(palabraNueva);
         console.log(listaDePalabras);
         formulario.reset();
+        interfazBotones.classList.remove("invisible")
     }else{
         alert("No has ingresado ninguna palabra");
     }
 })
+
+var interfazBotones = document.querySelector("#interfaz__botones");
+function ajusteInicial(){
+    if(listaDePalabras==""){
+        interfazBotones.classList.add("invisible");
+        console.log("probando");
+    };
+    
+}
+var aj = ajusteInicial();
 
 /**Funcion al oprimir el boton INICIAR JUEGO
  * Me realizado el llamado de los guiones
@@ -128,6 +139,10 @@ document.addEventListener("keypress",function(evento){
         }
     }
 },false);
+
+/**
+ * Me permite limbiar el canvas y limpiar la pantalla
+ */
 
 reiniciar.addEventListener("click",function(){
     limpiarPantalla(pincel);

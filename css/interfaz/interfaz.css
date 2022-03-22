@@ -19,7 +19,7 @@
 .interfaz__area:hover {
   background-color: rgb(123, 255, 0);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .interfaz__area{
     width: 95%;
     padding: 5px;

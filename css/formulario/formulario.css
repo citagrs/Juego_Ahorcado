@@ -33,7 +33,7 @@
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .formulario{
     display: flex;
     margin-bottom: 5rem;
